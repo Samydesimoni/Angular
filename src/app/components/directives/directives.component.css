@@ -1,0 +1,13 @@
+.small-title {
+  font-size: 12px;
+}
+
+.green-title {
+  color: green;
+}
+
+.underline-title {
+  text-decoration: underline;
+}
+
+/* temos o css com as classes que declaramos no ts sendo usadas agora

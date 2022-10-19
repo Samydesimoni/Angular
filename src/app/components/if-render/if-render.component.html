@@ -1,0 +1,12 @@
+<div class="class">
+  <div *ngIf="canShow">Estamos mostrando esse texto porque foi me permitido</div>
+  <!--aqui estamos usando o canshow que declaramos no ts, onde se estiver declarado como true ele aparece, mas se for false ele não aparece-->
+  <h2 *ngIf="name === 'Matheus'; else nameNotFound">O nome é Matheus</h2><!-- aqui temos uma pequena lógica, onde se o nome declarado no ts não for Matheus ele vai mostrar a mensagem abaixo-->
+  <ng-template #nameNotFound>
+    <!--vc tem que chamar dessa forma, com #-->
+    <div>
+      <h2>O nome não foi encontrado</h2><!-- essa mensagem, que seria o nameNotFound que esta dentro do else-->
+    </div>
+  </ng-template>
+</div>
+<!--nesse componente exemplos de redenrização condicional, com ngIf-->
